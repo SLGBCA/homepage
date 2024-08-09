@@ -1,52 +1,46 @@
- /* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body, html {
-  height: 100%
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
 }
 
-.bgimg {
-  /* Background image */
-  background-image: url('/w3images/forestbridge.jpg');
-  /* Full-screen */
-  height: 100%;
-  /* Center the background image */
-  background-position: center;
-  /* Scale and zoom in the image */
-  background-size: cover;
-  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-  position: relative;
-  /* Add a white text color to all elements inside the .bgimg container */
-  color: white;
-  /* Add a font */
-  font-family: "Courier New", Courier, monospace;
-  /* Set the font-size to 25 pixels */
-  font-size: 25px;
+.container {
+    text-align: center;
 }
 
-/* Position text in the top-left corner */
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
+.banner {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-/* Position text in the bottom-left corner */
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+.countdown-item {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
 }
 
-/* Style the <hr> element */
-hr {
-  margin: auto;
-  width: 40%;
-} 
+.countdown-item span {
+    font-size: 2em;
+    display: block;
+}
+
+.countdown-item p {
+    margin: 0;
+    font-size: 0.9em;
+}
