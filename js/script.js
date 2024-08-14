@@ -46,3 +46,8 @@ window.addEventListener('scroll', function() {
   
     });
   });
+
+  // Play audion on page load
+  window.onload = function() {
+    document.getElementById("play_audio_dhak").play();
+}
