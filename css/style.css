@@ -153,7 +153,7 @@ menu .log_sign_top{
 }
 
 .navbar .logo-text {
-    font-size: 20px;
+    font-size: 25px;
     color: #fff;
     font-weight: bold;
     vertical-align: middle; /* Ensures the text aligns vertically */
@@ -188,17 +188,28 @@ menu .log_sign_top{
     text-decoration: underline;
 }
 
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+.navbar-brand img {
+    height: 40px;
+    margin-right: 10px; /* Spacing between logo and text */
+}
+.navbar-nav .nav-link {
+    color: white;
+}
+.navbar-nav .nav-link i {
+    margin-right: 5px; /* Space between icon and text */
+}
 
-nav{
+nav {
     position: relative;
 }
 .nav_lg_ready{
     list-style: none;
-    /* background: radial-gradient(black, transparent); */
 }
-/* .m_line_height{
-    line-height: 80px;
-} */
+
 .nav_anchor_item{
     display: flex!important;
     justify-content: center;
