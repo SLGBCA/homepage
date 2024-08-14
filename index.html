@@ -1,44 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <link rel="stylesheet" href="index.css">
+    <meta http-equiv Manager="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap 4.3.1-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Custom Css Understand (_)-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
+    <!--Font Awesome 5.11.2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!--AOS Js Library Css source: http://michalsnik.github.io/aos/ -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--OWL Carousel Library Css -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 <body>
-    <audio id="background-music" src="dhak-sound1.mp3" autoplay loop>
-        Your browser does not support the audio element.
-    </audio>
-    <div class="container">
-	<div class="logo">
-           <img src="SLGBCA_LOGO.jpg" alt="SLGBCA Logo" width="150" height="150">
-	</div>
-	<div class="audio">
-           <video controls autoPlay><source src="dhak-sound1.mp3" type="audio/mp3" autoPlay></video>
+    <!--For Preloader-->
+    <div class="preloader">
+        <div class="loader">
         </div>
-        <div class="banner">
-            <h1>SLGBCA Website Launching Soon...</h1>
+        </div> 
+    <!--Preloader End-->
+    
+    <header>
+        <!---Menu and Navbar-->
+            <nav>
+                <div class="text-dark row justify-content-around navbar_list title_bg_radial m-0 p-0">
+                    <div>
+                        <a class="navbar-brand" href="#">
+                            <img src="img/slgbca-logo.png" width="75" height="75" alt="SLG Durga Puja">
+                        </a>
+                    </div>
+                  
+                    <ul class="nav_lg_ready m-0 p-0 row justify-content-end">
+                        <li class="sm_block_400 ">
+                            <a  class="nav_anchor_item px-1 py-2 m-0 d-inline-block text-light" href="#about_us">
+                                <i class="pr-2 fas fa-home">
+                                </i>About us
+                            </a>
+                        </li>
+                        <li class="sm_block_400  nav_dropdown">
+                            <a  class="nav_anchor_item px-1 py-2 m-0 d-inline-block text-light" href="#events">
+                                <i class=" pr-2 fas fa-blog"></i>Events
+                            </a>
+                        </li>
+                        <!-- We will enable this when we will have a few photos -->
+                        <!-- <li class="sm_block_400 nav_dropdown">
+                            <a  class="nav_anchor_item px-1 py-2 m-0 d-inline-block text-light" href="#gallery_list">
+                                <i class=" pr-2 far fa-images"></i>
+                                Gallery
+                            </a>
+                                    <ul class="nav_dropdown_menu p-0 m-0">
+                                        <li><a class="d-block text-light p-1 m-2" href="#"> <i  class=" pr-2 fas fa-images"></i> Gallery 2024</a></li>
+                                    </ul>
+                        </li> -->
+                        <li class="sm_block_400 "><a  class="nav_anchor_item px-1 py-2 m-0 d-inline-block text-light" href="#team_members"><i
+                                    class=" pr-2 fas fa-hand-holding-usd"></i> Team</a></li>
+                        <li class="sm_block_400 "><a  class="nav_anchor_item px-1 py-2 m-0 d-inline-block text-light" href="#contacts"><i
+                                    class=" pr-2 fas fa-hand-holding-usd"></i> Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </menu>
+        <!--Carousel html-->
+        <div id="mainpage" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="back_side_img back_side_img1"></div>
+                    <div class="carousel_content">
+                        <h5 class="display-4 font-weight-bold text-uppercase">Sobha Lake Gardens Bengali Cultural Association</h5>
+                        <h5 class="text-dark font-weight-bold">( The cultural team of Sobha Lake Gardens )</h5>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="countdown">
-            <div class="countdown-item">
-                <span id="days">00</span>
-                <p>Days</p>
+    </header>
+    
+    <section id="events" class="card_3 mt-5 d-flex justify-content-around container">
+        <div class="border border-warning p-0 mt-2 rounded-lg card_left ready_card col col-lg" data-aos="fade-right"
+            data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
+            <h5 class=" title_bg_radial text-light p-3 m-0">Upcomming Festivals & Events</h5>
+            <div class="w-75 mx-auto p-3 m_for_400">
+                <p class="font-weight-bold">
+                    The rhythmic beats of dhak, the aroma of festive food, and the enchanting pandals,
+                    Let's unite under Mother Durga's blessings and keep the spirit alive.
+                    Experience a touch of heaven in Mother's embrace, Lets celebrate <u>SLG Durga Puja 2024</u>
+                <h5>
             </div>
-            <div class="countdown-item">
-                <span id="hours">00</span>
-                <p>Hours</p>
-            </div>
-            <div class="countdown-item">
-                <span id="minutes">00</span>
-                <p>Minutes</p>
-            </div>
-            <div class="countdown-item">
-                <span id="seconds">00</span>
-                <p>Seconds</p>
+
+        </div>
+        <div class="border border-warning p-0 mt-2 rounded-lg card_center ready_card  col col-lg " data-aos="fade-left"
+            data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
+            <h5 class="text-light p-3 m-0 title_bg_radial">Durgotsava/Dasra 2024</h5>
+            <div class="w-75 mx-auto p-3 m_for_400 text-center">
+                <img src="img/durga-puja.png" class="card-img-top festivals " alt="Durga Puja">
+                <h6 class="text-muted text-black-50">The first SLG Durga Puja will start from Wed, 9 Oct, 2024 - Sun, 13 Oct, 2024</h6>
+
             </div>
         </div>
-    </div>
-    <script src="index.js"></script>
+        <div class="border border-warning p-0 mt-2 rounded-lg  card_right ready_card  col col-lg " data-aos="fade-left"
+            data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
+            <h5 class="text-light p-3 m-0 title_bg_radial">Lokkhi Puja 2024</h5>
+            <div class="w-75 mx-auto p-3  m_for_400 text-center">
+                <img src="img/lakkhi-puja.png" class="card-img-top festivals " alt="Durga Puja">
+                <h6 class="text-muted text-black-50">Also known as Kojagari Lakshmi Pujo will be celebrated at SLG on Oct 17, 2024</h6>
+
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Us -->
+    <section class="container-fluid sec_latest d-flex justify-content-start flex-wrap">
+        <div id="about_us" class="col col-md m-3 p-2 shadow rounded latest_inner border border-warning">
+                <div class="row about-us-section">
+                    <!-- Image and Video Overlay -->
+                    <div class="col-md-6 ">
+                        <div class="border border-warning">
+                            <img src="https://images.unsplash.com/photo-1659694328200-c8d0d5b7c79b?q=80&w=1960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Durga Puja" class="img-fluid">
+                        </div>
+                    </div>
+                    <!-- Text Section -->
+                    <div class="col-md-6 about-us-text">
+                        <h5>About us</h5>
+                        <h2>Sobha Lake Gardens Bengali Cultural Association (SLGBCA)</h2>
+                        <p>The Sobha Lake Gardens Bengali Cultural Association (SLGBCA) is a cultural and social group established by the Bengali families of Sobha Lake Gardens. Our mission is to preserve and celebrate Bengali culture while fostering a spirit of inclusiveness. SLGBCA not only upholds the rich traditions of Bengali heritage but also embraces the diversity within our community. We come together with many enthusiastic and dedicated volunteers to organize and celebrate a variety of festivals, sharing the joy with friends and families residing at SLG.</p>
+                        <p>SLGBCA will organise festivals such as Durga Puja, Kali Puja, Saraswati Puja, and Rabindra Jayanti (Birthday of Rabindra Nath Tagore) in upcoming year at SLG</p>
+                        <!-- Audio Player -->
+                    <div class="audio-player">
+                        <audio controls>
+                            <source src="audios/dhak-audio.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </div>
+                    
+                    <div class="countdown mt-3 border border-warning">
+                        <h1>Countdown to Durga Puja 2024</h1>
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <p>Days</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <p>Hours</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <p>Minutes</p>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="container-fluid sec_latest d-flex justify-content-start flex-wrap">
+        <div id="team_members" class="m-3 p-2 border border-warning rounded latest_inner">
+            <h2 class="section-title">SLGBCA Core Members</h2>
+            <p class="section-subtitle">
+                The core members of SLGBCA have been playing a key role in organising Durga Puja and other events at SLG. 
+            </p>
+            <div class="row">
+                <div class="col-md-3 mt-1">
+                    <div class="card">
+                        <img src="img/member-male.png" class="card-img-top" alt="Saurav Basu">
+                        <div class="card-body">
+                            <h5 class="card-title">Saurav Basu</h5>
+                            <p class="card-text">Organising Member</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-1">
+                    <div class="card">
+                        <img src="img/member-male.png" class="card-img-top" alt="Sanjay Thakur">
+                        <div class="card-body">
+                            <h5 class="card-title">Sanjay Thakur</h5>
+                            <p class="card-text">Organising Member</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-1">
+                    <div class="card">
+                        <img src="img/member-female.png" class="card-img-top" alt="Tia Dasgupta">
+                        <div class="card-body">
+                            <h5 class="card-title">Tia Dasgupta</h5>
+                            <p class="card-text">Organising Member</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-1">
+                    <div class="card">
+                        <img src="img/member-female.png" class="card-img-top" alt="Keka Datta">
+                        <div class="card-body">
+                            <h5 class="card-title">Keka Datta</h5>
+                            <p class="card-text">Organising Member</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-1">
+                    <div class="card">
+                        <img src="img/member-male.png" class="card-img-top" alt="Chiranjiv Pal">
+                        <div class="card-body">
+                            <h5 class="card-title">Chiranjiv Pal</h5>
+                            <p class="card-text">Organising Member</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-1">
+                    <div class="card">
+                        <img src="img/member-male.png" class="card-img-top" alt="Soumya Das">
+                        <div class="card-body">
+                            <h5 class="card-title">Soumya Das</h5>
+                            <p class="card-text">Organising Member</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="contacts" class="col col-md m-3 p-2  border border-warning latest_inner">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">
+                Feel free to reach out, and we'll get back to you with all the details! 
+            </p>
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="contact-card p-3">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-title">Address</div>
+                            <div class="contact-text">
+                                Sobha Lake Gardens, Bharthi Nagar<br>
+                                KR Puram, Bengaluru, Karnataka 560 049
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-card p-5">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-title">Email Us</div>
+                            <div class="contact-text">
+                                slgbca.bengaluru@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="contact-card p-5">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-title">Call Us</div>
+                            <div class="contact-text">
+                                +91 000 00 00000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="title_bg_radial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>SLGBCA</h5>
+                    <p>We are a cultural association committed to preserving and promoting our culture & heritage.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about_us">About Us</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#team_members">Team</a></li>
+                        <li><a href="#contacts">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: <a href="mailto:slgbca.bengaluru@gmail.com">slgbca.bengaluru@gmail.com</a></p>
+                    <p>Phone: +91 000 00 00000</p>
+                    <p>Address: Sobha Lake Gardens, Bharthi Nagar KR Puram, Bengaluru, Karnataka 560 049</p>
+                </div>
+            </div>
+            <p>&copy; 2024 SLGBCA, All Rights Reserved.</p>
+            <hr>
+        </div>
+        <a href="#" id="back-to-top" title="Back to top"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+
+
+    <!--Bootstrap Js-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--Custom Js-->
+    <script src="js/script.js"></script>
+    <!-- FOr Jquery 3.3.1 Preloader-->
+    <script>
+        $(window).on('load', function () {
+            $('.preloader').addClass('completed')
+        })
+
+    </script>
+    <!-- AOS Js Library source : http://michalsnik.github.io/aos/-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!---OWL Js Library For Carousel-->
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        // for AOS Library
+        AOS.init();
+        // for OWL Library
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: 1000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                300: {
+                    items: 2
+                },
+                400: {
+                    item: 3
+                },
+                600: {
+                    item: 4
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
 </body>
 </html>
