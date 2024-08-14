@@ -31,44 +31,18 @@
     
     <header>
         <!---Menu and Navbar-->
-            <nav>
-                <div class="text-dark row justify-content-around navbar_list title_bg_radial m-0 p-0">
-                    <div>
-                        <a class="navbar-brand" href="#">
-                            <img src="img/slgbca-logo.png" width="75" height="75" alt="SLG Durga Puja">
-                        </a>
-                    </div>
-                  
-                    <ul class="nav_lg_ready m-0 p-0 row justify-content-end">
-                        <li class="sm_block_400 ">
-                            <a  class="nav_anchor_item px-1 py-2 m-0 d-inline-block text-light" href="#about_us">
-                                <i class="pr-2 fas fa-home">
-                                </i>About us
-                            </a>
-                        </li>
-                        <li class="sm_block_400  nav_dropdown">
-                            <a  class="nav_anchor_item px-1 py-2 m-0 d-inline-block text-light" href="#events">
-                                <i class=" pr-2 fas fa-blog"></i>Events
-                            </a>
-                        </li>
-                        <!-- We will enable this when we will have a few photos -->
-                        <!-- <li class="sm_block_400 nav_dropdown">
-                            <a  class="nav_anchor_item px-1 py-2 m-0 d-inline-block text-light" href="#gallery_list">
-                                <i class=" pr-2 far fa-images"></i>
-                                Gallery
-                            </a>
-                                    <ul class="nav_dropdown_menu p-0 m-0">
-                                        <li><a class="d-block text-light p-1 m-2" href="#"> <i  class=" pr-2 fas fa-images"></i> Gallery 2024</a></li>
-                                    </ul>
-                        </li> -->
-                        <li class="sm_block_400 "><a  class="nav_anchor_item px-1 py-2 m-0 d-inline-block text-light" href="#team_members"><i
-                                    class=" pr-2 fas fa-hand-holding-usd"></i> Team</a></li>
-                        <li class="sm_block_400 "><a  class="nav_anchor_item px-1 py-2 m-0 d-inline-block text-light" href="#contacts"><i
-                                    class=" pr-2 fas fa-hand-holding-usd"></i> Contact Us</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </menu>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/slgbca-logo.png" alt="Logo"><span class="logo-text">SLGBCA</span>
+            </div>
+            <ul>
+                <li><a href="#about_us"><i class="fas fa-home"></i> About us</a></li>
+                <li><a href="#events"><i class="fas fa-calendar"></i> Events</a></li>
+                <li><a href="#team_members"><i class="fas fa-users"></i> Team</a></li>
+                <li><a href="#contacts"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+
         <!--Carousel html-->
         <div id="mainpage" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
@@ -83,38 +57,46 @@
         </div>
     </header>
     
-    <section id="events" class="card_3 mt-5 d-flex justify-content-around container">
-        <div class="border border-warning p-0 mt-2 rounded-lg card_left ready_card col col-lg" data-aos="fade-right"
-            data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
-            <h5 class=" title_bg_radial text-light p-3 m-0">Upcomming Festivals & Events</h5>
-            <div class="w-75 mx-auto p-3 m_for_400">
-                <p class="font-weight-bold">
-                    The rhythmic beats of dhak, the aroma of festive food, and the enchanting pandals,
-                    Let's unite under Mother Durga's blessings and keep the spirit alive.
-                    Experience a touch of heaven in Mother's embrace, Lets celebrate <u>SLG Durga Puja 2024</u>
-                <h5>
+    <div class="container">
+        <div class="row">
+            <!-- First Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Upcomming Festivals & Events
+                    </div>
+                    <div class="card-body">
+                        <p>The rhythmic beats of dhak, the aroma of festive food, and the enchanting pandals, Let's unite under Mother Durga's blessings and keep the spirit alive. Experience a touch of heaven in Mother's embrace. Let's celebrate <a href="#">SLG Durga Puja 2024</a>.</p>
+                    </div>
+                </div>
             </div>
-
-        </div>
-        <div class="border border-warning p-0 mt-2 rounded-lg card_center ready_card  col col-lg " data-aos="fade-left"
-            data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
-            <h5 class="text-light p-3 m-0 title_bg_radial">Durgotsava/Dasra 2024</h5>
-            <div class="w-75 mx-auto p-3 m_for_400 text-center">
-                <img src="img/durga-puja.png" class="card-img-top festivals " alt="Durga Puja">
-                <h6 class="text-muted text-black-50">The first SLG Durga Puja will start from Wed, 9 Oct, 2024 - Sun, 13 Oct, 2024</h6>
-
+            <!-- Second Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Durgotsava/Dasra 2024
+                    </div>
+                    <div class="card-body">
+                        <img src="img/durga-puja.png" alt="Durga Icon">
+                        <p class="text-muted text-black-50">The first SLG Durga Puja will start from Wed, 9 Oct, 2024 - Sun, 13 Oct, 2024.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Lokkhi Puja 2024
+                    </div>
+                    <div class="card-body">
+                        <img src="img/lakkhi-puja.png" alt="Lokkhi Feet"> <!-- Placeholder image, replace with the actual image URL -->
+                        <p class="text-muted text-black-50">Also known as Kojagari Lakshmi Pujo, will be celebrated at SLG on Oct 17, 2024.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="border border-warning p-0 mt-2 rounded-lg  card_right ready_card  col col-lg " data-aos="fade-left"
-            data-aos-easing="linear" data-aos-duration="1500" data-aos-once="true">
-            <h5 class="text-light p-3 m-0 title_bg_radial">Lokkhi Puja 2024</h5>
-            <div class="w-75 mx-auto p-3  m_for_400 text-center">
-                <img src="img/lakkhi-puja.png" class="card-img-top festivals " alt="Durga Puja">
-                <h6 class="text-muted text-black-50">Also known as Kojagari Lakshmi Pujo will be celebrated at SLG on Oct 17, 2024</h6>
+    </div>
 
-            </div>
-        </div>
-    </section>
     
     <!-- About Us -->
     <section class="container-fluid sec_latest d-flex justify-content-start flex-wrap">
