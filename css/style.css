@@ -1064,3 +1064,35 @@ footer a:hover {
  #back-to-top:hover {
     background-color: #0069d9;
   }
+
+/* event table details */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1px;
+    background-color: #ffffff; /* Set table background to white */
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+th {
+    background-color: #f55f47;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+td {
+    font-size: 14px;
+}
+.date-header {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+.highlight {
+    font-weight: bold;
+    color: #d9534f;
+}
+.icon-clock {
+    margin-right: 5px;
+}
