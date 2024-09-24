@@ -1091,8 +1091,17 @@ td {
 }
 .highlight {
     font-weight: bold;
-    color: #d9534f;
+    color: #f55f47;
 }
 .icon-clock {
     margin-right: 5px;
+}
+
+.nav-tabs .nav-link.active {
+    border: 1px solid #ffc107;
+    background-color: #f55f47;
+    color: #fff;
+  }
+.nav-link {
+    color: #ffc107;
 }
