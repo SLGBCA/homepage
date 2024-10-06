@@ -61,8 +61,8 @@
         <div id="mainpage" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="back_side_img back_side_img1"></div>
-                    <div class="carousel_content">
+                    <div class="back_side_img back_side_img2"></div>
+                    <div class="carousel_content border border-danger">
                         <h5 class="display-4 font-weight-bold text-uppercase">Sobha Lake Gardens Bengali Cultural Association</h5>
                         <h5 class="text-dark font-weight-bold">( The cultural team of Sobha Lake Gardens )</h5>
                     </div>
@@ -77,17 +77,18 @@
             <div class="col-md-4">
                 <div class="card border border-warning animate-card">
                     <div class="card-header">
-                        Upcomming Festivals & Events
+                        Durga Puja 2024 at SLG
                     </div>
                     <div class="card-body">
-                        <p>The rhythmic beats of dhak, the aroma of festive food, and the enchanting pandals, Let's unite under Mother Durga's blessings and keep the spirit alive. Experience a touch of heaven in Mother's embrace. Let's celebrate <a href="#">SLG Durga Puja 2024</a>.</p>
+                        <p>The rhythmic beats of dhak, the aroma of festive food, and the enchanting pandals, Let's unite under Maa Durga's blessings and keep the spirit alive. Experience a touch of heaven in Maa's embrace. Let's celebrate <a href="#">SLG Durga Puja 2024</a>.</p>
                     </div>
                 </div>
             </div>
             <!-- Second Card -->
             <div class="col-md-4">
-                <div class="card border border-warning animate-card">
+                <div class="card border border-danger animate-card">
                     <div class="card-header">
+                        <div class="spinner-grow text-warning" role="status"></div>
                         Durgotsava/Dasra 2024
                         <div class="spinner-grow text-warning" role="status"></div>
                     </div>
@@ -112,188 +113,255 @@
             </div>
         </div>
     </div>
-    
-    <!-- About Us -->
-    <section class="container-fluid sec_latest d-flex justify-content-start flex-wrap">
-        <div id="about_us" class="col col-md m-3 p-2 shadow rounded latest_inner border border-warning">
-                <div class="row about-us-section">
-                    <!-- Image and Video Overlay -->
-                    <div class="col-md-6 ">
-                        <div class="border border-warning">
-                            <img src="https://images.unsplash.com/photo-1659694328200-c8d0d5b7c79b?q=80&w=1960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Durga Puja" class="img-fluid">
-                        </div>
-                    </div>
-                    <!-- Text Section -->
-                    <div class="col-md-6 about-us-text">
-                        <h5>About us</h5>
-                        <h2>Sobha Lake Gardens Bengali Cultural Association (SLGBCA)</h2>
-                        <p>The Sobha Lake Gardens Bengali Cultural Association (SLGBCA) is a cultural and social group established by the Bengali families of Sobha Lake Gardens. Our mission is to preserve and celebrate Bengali culture while fostering a spirit of inclusiveness. SLGBCA not only upholds the rich traditions of Bengali heritage but also embraces the diversity within our community. We come together with many enthusiastic and dedicated volunteers to organize and celebrate a variety of festivals, sharing the joy with friends and families residing at SLG.</p>
-                        <p>SLGBCA will organise festivals such as Durga Puja, Kali Puja, Saraswati Puja, and Rabindra Jayanti (Birthday of Rabindra Nath Tagore) in upcoming year at SLG</p>
-                        <!-- Audio Player -->
-                    <div class="audio-player">
-                        <audio controls>
-                            <source src="audios/dhak-audio.mp3" type="audio/mpeg">
-                            Your browser does not support the audio element.
-                        </audio>
-                    </div>
-                    
-                    <div class="countdown mt-3 border border-warning">
-                        <h1>Countdown to Durga Puja 2024</h1>
-                        <div class="countdown-item">
-                            <span id="days">00</span>
-                            <p>Days</p>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="hours">00</span>
-                            <p>Hours</p>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="minutes">00</span>
-                            <p>Minutes</p>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="seconds">00</span>
-                            <p>Seconds</p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-        </div>
-    </section>
   <!-- Event Details -->
-  <section class="container-fluid sec_latest d-flex justify-content-start flex-wrap">
-    <div id="event_details" class="col col-md m-3 p-2 shadow rounded latest_inner border border-warning">
+  <section class="container-fluid sec_latest">
+    <div id="event_details" class="m-3 p-2 shadow rounded latest_inner border border-warning">
         <!-- Tab Navigation -->
         <ul class="nav nav-tabs" id="eventTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <a class="nav-link active" id="p1-tab" data-toggle="tab" href="#p1" role="tab" aria-controls="p1" aria-selected="true">Puja Schedule</a>
+            <li class="nav-item">
+                <a class="nav-link active" id="p3-tab" data-toggle="tab" href="#p3" role="tab" aria-controls="p3" aria-selected="false">Cultural Events Schedule</a>
             </li>
-            <li class="nav-item" role="presentation">
+            <li class="nav-item">
+                <a class="nav-link" id="p1-tab" data-toggle="tab" href="#p1" role="tab" aria-controls="p1" aria-selected="true">Puja Schedule</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" id="p2-tab" data-toggle="tab" href="#p2" role="tab" aria-controls="p2" aria-selected="false">Maa Bhog Schedule</a>
-            </li>
-            <li class="nav-item" role="presentation">
-                <a class="nav-link" id="p3-tab" data-toggle="tab" href="#p3" role="tab" aria-controls="p3" aria-selected="false">Residents Cultural Activities</a>
             </li>
         </ul>
 
         <!-- Tab Content -->
         <div class="tab-content" id="eventTabContent">
-            <!-- Day 1 Tab -->
-            <div class="tab-pane fade show active" id="p1" role="tabpanel" aria-labelledby="p1-tab">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Date</th>
-                            <th>Morning</th>
-                            <th>Evening</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="date-header">
-                            <td class="text-bold">Wednesday, 9th Oct - Maha Sosthi</td>
-                            <td>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 9:30 AM</span>: Shoshti Pujo by Pandit Ji</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 10:15 AM</span>: Pushpanjali</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 10:45 AM</span>: Aarati</p>
-                            </td>
-                            <td>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 6:30 PM</span>: Devi Bodhon (Amontron)</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 7:30 PM</span>: Aarati</p>
-                            </td>
-                        </tr>
-                        <tr class="date-header">
-                            <td>Thursday, 10th Oct - Maha Saptami and Ashtami</td>
-                            <td>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 6:10 AM</span>: Naboprotika Snan (Kola Bou)</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 8:30 AM</span>: Saptami Pujo starts</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 11:00 AM</span>: Saptami Pushpanjali</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 11:30 AM</span>: Saptami Aarati</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 12:00 PM</span>: Chandi Path</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 12:40 PM</span>: Maer Bhog</p>
-                            </td>
-                            <td>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 6:00 PM - 7:00 PM</span>: Saptami Evening Aarati with Luchi Prasad</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 8:00 PM</span>: Ashtami Pujo starts</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 10:30 PM</span>: Ashtami Pushpanjali</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 11:00 PM</span>: Ashtami Aarati</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 11:30 PM</span>: Chandi Path</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 12:00 AM (Midnight)</span>: Maer Bhog</p>
-                            </td>
-                        </tr>
-                        <tr class="date-header">
-                            <td>Friday, 11th Oct - Maha Ashtami - Nabami</td>
-                            <td>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 5:00 AM</span>: Shondhi Puja</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 6:24 AM</span>: Sandhi Pujo starts</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 6:48 AM</span>: Bali Daan (Ash Gourd)</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 6:49 AM</span>: Sandhi Pujo Aarati</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 6:55 AM</span>: Sandhi Pujo Pushpanjali</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 7:25 AM</span>: Kali Bhog</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 9:30 AM</span>: Nabomi Pujo starts</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 11:30 AM</span>: Nabami Pushpanjali</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 11:45 AM</span>: Nabami Aarati</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 12:20 PM</span>: Chandi Path</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 1:00 PM</span>: Maer Bhog</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 1:10 PM</span>: Hom/Yagya</p>
-                            </td>
-                            <td>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 6:30 PM</span>: Nabomi Evening Aarati with Luchi Prasad</p>
-                            </td>
-                        </tr>
-                        <tr class="date-header">
-                            <td>Saturday, 12th Oct - Dashami / Sidur Khela</td>
-                            <td>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 9:30 AM</span>: Dashami Pujo starts</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 10:10 AM</span>: Dashami Pushpanjali</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 10:40 AM</span>: Dashami Aarati</p>
-                                <p><i class="bi bi-clock icon-clock"></i><span class="highlight"> 11:00 AM</span>: Aparajita Lota Pujo followed by Maer Boron, Sidur Khela</p>
-                            </td>
-                            <td></td>
-                        </tr>
-                        <tr class="date-header">
-                            <td>Sunday, 13th Oct - Bisorjon</td>
-                            <td colspan="2">
-                                <p><span class="highlight">Bisorjon</span></p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- Puja Schedule Tab -->
+            <div class="tab-pane fade show" id="p1" role="tabpanel" aria-labelledby="p1-tab">
+                <div class="row">
+                    <!-- Day 1 Card -->
+                    <div class="container col-md-2 mb-2">
+                        <div class="card border border-warning shadow-sm">
+                            <div class="card-header bg-warning text-white">
+                                Wednesday, 9th Oct - Maha Sosthi
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Morning</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">9:30 AM</span>: Shashti Pujo Start</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">10:15 AM</span>: Pushpanjali</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">10:45 AM</span>: Morning Aarati</p>
+                                <h5 class="card-title">Evening</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:30 PM Onwards</span>: Cultural Programme</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">7:30 PM</span>: Aarati</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Day 2 Card -->
+                    <div class="container col-md-3 mb-3">
+                        <div class="card border border-warning shadow-sm">
+                            <div class="card-header bg-warning text-white">
+                                Thursday, 10th Oct - Maha Saptami and Ashtami
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Morning</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">9:30 AM</span>: Saptami Pujo starts</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">10:15 AM</span>: Saptami Pushpanjali</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">11:30 AM</span>: Bhog & Arati</p>
+                                <h5 class="card-title">Evening</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:30 PM</span>: Evening Aarati</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:30 PM Onwards</span>: Cultural Programme</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8:00 PM</span>: Ashtami Pujo starts</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">10:30 PM</span>: Ashtami Pushpanjali</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">11:00 PM - 12:00 AM</span>: Aarati, Chandi Path & Bhog</p>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Day 3 Card -->
+                    <div class="container col-md-3 mb-3">
+                        <div class="card border border-warning shadow-sm">
+                            <div class="card-header bg-warning text-white">
+                                Friday, 11th Oct - Maha Ashtami - Nabami
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Morning</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:49 AM</span>: Sandhi Pujo starts</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:55 AM - 7:25 AM</span>: Pushpanjali & Bhog</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">11:30 AM</span>: Nabami Pushpanjali</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">11:45 AM</span>: Nabami Aarati</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">12:20 PM - 1:30 PM</span>: Chandi Path, Bhog & Hom</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">12:00 PM - 2:30 PM</span>: Ashtami Prasad Distribution</p>
+                                <h5 class="card-title">Evening</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:30 PM</span>: Evening Aarati</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:30 PM Onwards</span>: Cultural Programme</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Day 4 Card -->
+                    <div class="container col-md-3 mb-3">
+                        <div class="card shadow-sm border border-warning">
+                            <div class="card-header bg-warning text-white">
+                                Saturday, 12th Oct - Dashami / Sidur Khela
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Morning</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">9:30 AM</span>: Dashami Pujo starts</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">10:10 AM</span>: Dashami Pushpanjali</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">10:40 AM</span>: Morning Arati</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">11:00 AM - 2:00 PM</span>: Sidur Khela</p>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">12:00- 3:00 PM</span>: Nabami Bhog Distribution</p>
+                            </div>
+                        </div>
+                        
+                        <div class="card text-white border border-warning mt-3"> 
+                            <div class="card-header bg-warning text-white">
+                                Sunday, 13th Oct - Bisorjon
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8:30 AM</span>: Visarjan</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
-            <!-- Day 2 Tab -->
+            <!-- Maa Bhog Schedule Tab -->
             <div class="tab-pane fade" id="p2" role="tabpanel" aria-labelledby="p2-tab">
-                <table class="table">
-                    <tr>
-                      <th>Day/Date</th>
-                      <th>Afternoon Bhog</th>
-                      <th>Evening Bhog</th>
-                    </tr>
-                    <tr>
-                      <td>Maha Saptami (Thursday, 10th Oct)</td>
-                      <td><i class="bi bi-clock icon-clock"></i><span class="highlight">12:00 PM</span> - White Rice, Sabji, Daal, 5 types of Fries (Bhindi, aloo, pumpkin, Pointed Gourd, Bitter gourd etc), Sweet Chutney, Papad, Dahi, Sweets, Paan</td>
-                      <td><i class="bi bi-clock icon-clock"></i><span class="highlight">5:30 PM</span> - Luchi, Halwa, Sandesh, Paan</td>
-                    </tr>
-                    <tr>
-                      <td>Maha Ashtami (Thursday, 10th - Friday, 11th Oct)</td>
-                      <td><i class="bi bi-clock icon-clock"></i><span class="highlight">11:30PM</span> - Luchi, Daal (Chana), Mixed Veg/ Sabji, Halwa, 5 types of Fries, Sweet Chutney, Papad, Dahi, Sweets, Paan</td>
-                      <td><i class="bi bi-clock icon-clock"></i><span class="highlight">7:00 AM</span> - Khichdi, Any fry (Brinjal, Cabbage sabji), Sweet Chutney, Papad, Dahi, Sweets, Paan</td>
-                    </tr>
-                    <tr>
-                      <td>Maha Nabami (Friday, 11th Oct)</td>
-                      <td><i class="bi bi-clock icon-clock"></i><span class="highlight">12:30 PM</span> - Pulao, Aloo dum, Paneer, Sweet Chutney, Dahi, Sweets, Paan</td>
-                      <td><i class="bi bi-clock icon-clock"></i><span class="highlight">6:00 PM</span> - Luchi, Halwa, Sandesh, Paan</td>
-                    </tr>
-                    <tr>
-                      <td>Dashami (Saturday, 12th Oct)</td>
-                      <td><i class="bi bi-clock icon-clock"></i><span class="highlight">9:00 AM</span> - Chire (Flattened rice), Murki (Murmura), Dahi, Milk, Sugar</td>
-                      <td></td>
-                    </tr>
-                  </table>
+                <div class="row">
+                    <!-- Day 1 Bhog Card -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card border border-warning shadow-sm">
+                            <div class="card-header bg-warning text-white">
+                                Maha Saptami - Thursday, 10th Oct
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Afternoon Bhog</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">12:00 PM</span> - White Rice, Sabji, Daal, 5 types of Fries, Sweet Chutney, Papad, Dahi, Sweets, Paan</p>
+                                <h5 class="card-title">Evening Bhog</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">5:30 PM</span> - Luchi, Halwa, Sandesh, Paan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Day 2 Bhog Schedule -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card border border-warning shadow-sm">
+                            <div class="card-header bg-warning text-white">
+                                Maha Ashtami (Thursday, 10th - Friday, 11th Oct)
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Afternoon Bhog</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">11:30 AM</span> - Luchi, Daal (Chana), Mixed Veg/ Sabji, Halwa, 5 types of Fries, Sweet Chutney, Papad, Dahi, Sweets, Paan</p>
+                                <h5 class="card-title">Evening Bhog</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">7:00 PM</span> - Khichdi, Any fry (Brinjal, Cabbage sabji), Sweet Chutney, Papad, Dahi, Sweets, Paan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Day 3 Bhog Schedule -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card border border-warning shadow-sm">
+                            <div class="card-header bg-warning text-white">
+                                Maha Nabami (Friday, 11th Oct)
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Afternoon Bhog</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">12:30 PM</span> - Pulao, Aloo dum, Paneer, Sweet Chutney, Dahi, Sweets, Paan</p>
+                                <h5 class="card-title">Evening Bhog</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:00 PM</span> - Luchi, Halwa, Sandesh, Paan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Day 4 Bhog Schedule -->
+                    <div class="col-md-3 mb-3">
+                        <div class="card border border-warning shadow-sm">
+                            <div class="card-header bg-warning text-white">
+                                Dashami (Saturday, 12th Oct)
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Afternoon Bhog</h5>
+                                <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">9:00 AM</span> - Chire (Flattened rice), Murki (Murmura), Dahi, Milk, Sugar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Day 3 Tab -->
-            <div class="tab-pane fade" id="p3" role="tabpanel" aria-labelledby="p4-tab">
-                <p>We are working on this!</p>
+            <!-- Residents Cultural Activities Tab -->
+            <div class="tab-pane fade show active" id="p3" role="tabpanel" aria-labelledby="p3-tab">
+                <div class="tab-pane fade show" id="p1" role="tabpanel" aria-labelledby="p1-tab">
+                    <div class="row">
+                        <!-- Cultural Day 1 Card -->
+                        <div class="container col-md-2 mb-2">
+                            <div class="card border border-warning shadow-sm">
+                                <div class="card-header bg-warning text-white">
+                                    Wednesday, 9th Oct
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:00 PM Onwards</span>: Anondomela</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:30 PM</span>: Durga Stotra</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:45 PM</span>: Olam Girls (Group Dance)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">7:00 PM</span>: Bhajan by Meena Gupta</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">7:10 PM</span>: Solo Dance (Satwika)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">7:20 PM</span>: Recitation (Rudransh)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8.15 PM</span>: Pass the parcel (Kids)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8.30 PM</span>: Recitation (Sreehita)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8:35 PM</span>: Global Music School Performance</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">7:10 PM</span>: Pass the parcel (Kids)</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- Cultural Day 2 Card -->
+                        <div class="container col-md-3 mb-3">
+                            <div class="card border border-warning shadow-sm">
+                                <div class="card-header bg-warning text-white">
+                                    Thursday, 10th Oct
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">4:00 PM Onwards</span>: Art Mela</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:00 PM</span>: Lalitha Sathnasam</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:30 PM</span>: Solo Song (Ayantika)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">7:30 PM</span>: Mahishashur Mardini</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">7:50 PM</span>: Group Dance (Odia Glam Girls)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8:00 PM</span>: Group Song ( In Sync with love)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8:15 PM</span>: Skit (Happy World)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8:30 PM Onwards</span>: Antakshari</p>
+                                </div>
+                            </div>
+                        </div>
+                         <!-- Day 3 Card -->
+                        <div class="container col-md-3 mb-3">
+                            <div class="card border border-warning shadow-sm">
+                                <div class="card-header bg-warning text-white">
+                                    Friday, 11th Oct
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">2:00 PM Onwards</span>: Flea Market</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:30 PM</span>: Daksha Yajna</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">7:30 PM</span>: Dhunuchi Dhamaal</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">7:50 PM</span>: Family Number 1 (Family Game)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8:00 PM</span>: Bihu Dance (Barkha & Teena)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8:10 PM</span>: Solo Song (Shrabani)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8:20 PM</span>: Solo Dance (Ishanvi)i</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8.25 PM</span>: Conch Shell competitio</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8.40 PM</span>: Solo Song (Anwesha)</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">8:45 PM</span>: Global Music School Performance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Day 4 Card -->
+                        <div class="container col-md-3 mb-3">
+                            <div class="card shadow-sm border border-warning">
+                                <div class="card-header bg-warning text-white">
+                                    Saturday, 12th Oct
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Morning</h5>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">5:30 PM</span>: Ravan Dahan</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:00 PM</span>: Prize Distribution</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">10:40 AM</span>: Morning Arati</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">6:30 PM Onwards</span>: Dandiya Night</p>
+                                    <p class="card-text"><i class="bi bi-clock"></i> <span class="highlight">9:00 PM</span>: SLG Lottery Winner Announcement</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

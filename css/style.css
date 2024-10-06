@@ -424,6 +424,14 @@ ul.nav_dropdown_menu{
     background: url('https://images.unsplash.com/photo-1634015158905-de840be0c62c?q=80&w=1960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') center center / cover no-repeat fixed;
 }
 
+.back_side_img2{
+    background-image: url('../img/durga-puja-slg.png');
+    background-position: center;
+    backface-visibility: visible;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 /*..........Card 2.......*/
 .card-header {
     background-color: #FF4C4C; /* Red color for headers */
@@ -911,6 +919,10 @@ footer{
     margin-bottom: 15px;
     line-height: 1.6;
 }
+
+.text-underline {
+    text-decoration: underline;
+  }
 
 .video-overlay {
     position: relative;
