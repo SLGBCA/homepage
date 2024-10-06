@@ -431,6 +431,7 @@ ul.nav_dropdown_menu{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    -webkit-background-size: cover; /* for Safari */
 }
 /*..........Card 2.......*/
 .card-header {
