@@ -431,7 +431,13 @@ ul.nav_dropdown_menu{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    -webkit-background-size: cover; /* for Safari */
+    height: 100vh; /* or set a specific height */
+}
+/* Target Safari on iOS devices */
+@supports (-webkit-touch-callout: none) {
+    .back_side_img2 {
+        background-attachment: scroll; /* or remove background-attachment */
+    }
 }
 /*..........Card 2.......*/
 .card-header {
